@@ -80,8 +80,8 @@ android {
     namespace "com.qsc_app"
     defaultConfig {
         applicationId "com.qsc_app"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 24
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
