@@ -1,6 +1,8 @@
 import React from 'react';
 import MainApp from './MainApp';
 
-export default function App() {
+const App = () => {
   return <MainApp />;
-}
+};
+
+export default App;

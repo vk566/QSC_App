@@ -1,25 +1,10 @@
-import { Router } from "express";
-import {
-  pqcKeyEncapsulation,
-  deriveSessionKey,
-  encryptMessage
-} from "../cryptoLogic";
+// backend/routes/index.ts
+import { Router } from 'express';
+import { router as coreRouter } from '../routes';
 
 const router = Router();
 
-router.post("/send", async (req, res) => {
-  const { message } = req.body;
-  const { sessionId, sharedSecret } = await pqcKeyEncapsulation();
-  const key = deriveSessionKey(sharedSecret);
-  const encrypted = encryptMessage(message, key);
-
-  res.json({
-    sessionId,
-    ciphertext: encrypted.ciphertext,
-    iv: encrypted.iv,
-    authTag: encrypted.authTag,
-    sharedSecret: sharedSecret.toString("base64")
-  });
-});
+// Forward to the main router
+router.use('/', coreRouter);
 
 export default router;
