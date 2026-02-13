@@ -9,7 +9,7 @@ Dynamic Key Rotation: Features AES-256-GCM encryption with keys that rotate per 
 
 Zero-Knowledge Architecture: The backend (Node.js/Supabase) only stores encrypted ciphertext; even the server cannot read your messages.
 
-Simulation Mode: Includes a dedicated tab to visualize the QKD (Quantum Key Distribution) and PQC workflows in real-time.
+
 
 🛠️ Technical Stack
 Frontend: React Native (TypeScript)
