@@ -4,7 +4,7 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 
 // ✅ CORRECT CONFIGURATION (Derived from your Key)
 const SUPABASE_URL = 'https://zpunedwsgzijpezpwuih.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwdW5lZHdzZ3ppanBlenB3dWloIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyMTAyNjMsImV4cCI6MjA4MDc4NjI2M30.BuuRuutYeavlC_iSckS_dCoxzpBAGtIqL9HBpV7586I';
+const SUPABASE_ANON_KEY = 'TzGffCoJqCVw/xk7miYo2/XqDvBYnajccRijJC40vnmd9LgE3LmDegMeGePCOy8jnnC8RHORLzM/eU7uu4nn2A==';
 
 const SecureStorageAdapter = {
   getItem: async (key: string) => {
