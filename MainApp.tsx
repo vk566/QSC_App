@@ -26,7 +26,7 @@ interface Message { id: string; sender_id: string; receiver_id: string | null; g
 
 // --- CONFIGURATION ---
 const SUPABASE_URL = 'https://zpunedwsgzijpezpwuih.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwdW5lZHdzZ3ppanBlenB3dWloIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NTIxMDI2MywiZXhwIjoyMDgwNzg2MjYzfQ.OlND0tzmojUIWwzbLrkcYIRGlIuzOGQn-E05zzw00ig';
+const SUPABASE_ANON_KEY = 'TzGffCoJqCVw/xk7miYo2/XqDvBYnajccRijJC40vnmd9LgE3LmDegMeGePCOy8jnnC8RHORLzM/eU7uu4nn2A==';
 const BACKEND_URL = "https://backend-production-53f9e.up.railway.app";
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
